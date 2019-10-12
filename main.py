@@ -23,7 +23,7 @@ def parse():
     parser.add_argument('--dataset_fn_keys', type=str, default='test_domain')
     parser.add_argument('--dataset_fn_values', type=str, default='art_painting')
     parser.add_argument('--dataloader', type=str, default='deepall_dataloader')
-    parser.add_argument('--model_name', type=str, default='alexnet_DSAM')
+    parser.add_argument('--model_name', type=str, default='DSAM_alexnet')
     parser.add_argument('--pretrained', type=bool, default=True, help='Initialize from a pretrained model')
     parser.add_argument('--transforms_name', type=str, default='DSAM_transforms')
     parser.add_argument('--training_fn', type=str, default='DSAM_training')
