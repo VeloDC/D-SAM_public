@@ -40,6 +40,7 @@ class DSAMTraining(AbstractTraining):
 
         sizes = [s for sublist in dataset_sizes.values() for s in sublist]
         steps_per_epoch = int(max(sizes) / batch_size)
+        self.total_steps = steps_per_epoch * num_epochs
         log_frequency = steps_per_epoch // 5
         print('Working with %d steps per epoch' % steps_per_epoch)
         training_epoch_size = batch_size * len(dataloaders['train']) * steps_per_epoch
